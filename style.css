@@ -1,85 +1,101 @@
-body {
-  box-sizing: border-box;
-  font-family: open-sans,sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.5;
-  text-align: center;
-  background-color: #f0f0f0;
   
-}
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
-/* #main styling */
-#main {
-  padding: 1.2rem;
-}
+  body {
+    box-sizing: border-box;
+    font-family: 'Open-sans',sans-serif;
+    background-color: #fff;
+    color:  #333;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+  }
 
-/* H1 styling */
 
-#title {
-  font-size: 2rem;
-  font-family: futura-pt,sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 1rem 0 0 ;
+  h1, h3 {
+    font-weight: bold;
+  }
 
-}
 
-.great {
-  padding: 0.5rem 0;
-}
+    /* #main styling */
 
-#img-div {
-  padding: 10px 0;
+  #main {
+    margin: 30px 5px;
+    padding: 20px;
+  }
+  @media (max-width: 460px){
+    #main {
+      margin: 0;
+    }
+  }
+
+
+     /* #title styling */
+
+  #title {
+    font-size: 3rem;
+    margin: 1rem 0 0;
+  }
+  .paragraph1 {
+    margin: 0.5rem 0;
+  }
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+  }
+
+
+      /*img styling*/
   
-}
-#img-caption{
-  margin: 5px 0 5px;
-  font-style: italic;
-}
+   img {
+    max-width: 100%;
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+  }
+  #img-div {
+    padding: 10px;
+    margin: 0;
+    }
+  #img-caption{
+    margin: 15px 0 5px 0;
+    font-style: italic;
+  }
+  @media (max-width: 460px){
+    #img-caption {
+      font-style: 1.4rem;
+    }
+  }
 
-img {
-  max-width: 100%;
-}
+  /* section styling */
 
-/* section styling */
-#tribute_info {
-  max-width: 700px;
-  margin: 1rem auto 3rem;
-}
+  #tribute_info {
+    max-width: 700px;
+    margin: 1.5rem auto 3rem;
+  }
 
-section > p, blockquote {
-  text-align: justify;
-  text-indent: 2rem;
-}
+  section > p {
+    text-align: justify;
+    text-indent: 2rem;
+    margin: 0.4rem 0;
+  }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
+  h3 {
+    font-size: 1.2rem;
+  }
 
-blockquote{
-  display: block;
-  max-width: 650px;
-  margin: 1.5rem auto 2rem;
-  font-style: italic;
-  text-align: left;
-}
-p.quote {
-  text-indent: 0;
-}
+  a:visited {
+    color: #a00000;
+  }
 
-a:visited {
-  color: #a00000;
-}
-
-a:hover {
-  color: #74638f;
-}
+  a:hover {
+    color: #74638f;
+  }
